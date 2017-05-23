@@ -28,16 +28,16 @@ module.exports = postcss.plugin('postcss-font-vsize', options => {
                         dimension = (o.size.indexOf('vh')>0)? 'height' : 'width';
                         minCalc = util.calc('x/y*100', {x: o.min, y: o.size.replace(/[^0-9\.\-]+/ig,'')});
                         minMedia = `@media (max-${dimension}: ${minCalc}) { ${selector} { font-size: ${o.min} } }`;
-                        parent.before(minMedia);
+                        parent.after(minMedia);
                         if(o.max) {
                             maxCalc = util.calc('x/y*100', {x: o.max, y: o.size.replace(/[^0-9\.\-]+/ig,'')});
                             maxMedia = `@media (min-${dimension}: ${maxCalc}) { ${selector} { font-size: ${o.max} } }`;
-                            parent.before(maxMedia);
+                            parent.after(maxMedia);
                         }
                         if(o.fallback) {
-                            decl.before(`font-size: ${o.fallback}`);
+                            decl.before(`font-size: ${o.fallback};`);
                         }
-                        decl.before(`font-size: ${o.size}`);
+                        decl.before(`font-size: ${o.size};`);
                 }
             }
             decl.remove();

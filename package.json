@@ -1,7 +1,7 @@
 {
   "name": "postcss-font-vsize",
   "description": "A postcss plugin to add viewport relative font size with minimum and maximum values",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "maintainers": [
     {
       "name": "Arpad Hegedus",
