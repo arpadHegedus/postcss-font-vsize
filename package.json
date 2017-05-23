@@ -1,0 +1,20 @@
+{
+  "name": "postcss-font-vsize",
+  "description": "A postcss plugin to add viewport relative font size with minimum and maximum values",
+  "version": "1.0.0",
+  "maintainers": [
+    {
+      "name": "Arpad Hegedus",
+      "email": "hegedus.arpad@gmail.com",
+      "web": "http://arpadhegedus.com"
+    }
+  ],
+  "main": "index.js",
+  "repository" : { 
+    "type": "git", 
+    "url": "https://github.com/arpadHegedus/postcss-font-vsize.git"
+  },
+  "dependencies": {
+    "postcss": "^5.2.12"
+  }
+}
