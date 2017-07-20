@@ -1,7 +1,7 @@
 /**
  * POSTCSS FONT VSIZE
  * A postcss plugin to add viewport relative font size with minimum and maximum values
- * version          1.0.0
+ * version          1.0.3
  * author           Arpad Hegedus <hegedus.arpad@gmail.com>
  */
 

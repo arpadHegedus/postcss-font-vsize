@@ -1,3 +1,6 @@
+# 1.0.3 - 2017-07-20
+* Fixed missing dependency on package Json
+
 # 1.0.2 - 2017-05-23
 * Updated version of postcss
 
